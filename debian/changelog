@@ -1,5 +1,28 @@
-template-repository (1.0-1) unstable; urgency=medium
+wayvnc (0.6.2-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version. (Closes: #1041895)
+  * debian/wayvnc.examples: Install example files.
+  * debian/copyright: Update information.
+  * debian/control:
+    + Add new build-dep libjansson-dev.
+    + Further limit version requirement for libaml-dev, libneatvnc-dev.
+    + Add myself into Uploaders list.
+    + Bump Standards-Version to 4.6.2.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Boyuan Yang <byang@debian.org>  Tue, 25 Jul 2023 14:01:01 -0400
+
+wayvnc (0.5.0-1) unstable; urgency=medium
+
+  * New upstream version
+      - Use new NeatVNC buffer submission API (closes: #1015099)
+  * debian/control: add minimum version for libneatvnc-dev (>= 0.5.1)
+  * debian/copyright: murmurhash was moved to neatvnc
+  * debian/copyright: bump year
+
+ -- Johannes Schauer Marin Rodrigues <josch@debian.org>  Sat, 16 Jul 2022 22:50:17 +0200
+
+wayvnc (0.4.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1002590)
+
+ -- Johannes Schauer Marin Rodrigues <josch@debian.org>  Tue, 28 Dec 2021 11:34:53 +0100
